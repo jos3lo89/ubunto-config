@@ -44,3 +44,22 @@ curl -fsSL https://bun.sh/install | bash
 ```bash
 source /home/lagarto/.bashrc
 ```
+
+
+
+### atajos de teclado vs code config
+
+- bloc de notas: copiar celda inferior  `Mayús + Alt + DownArrow`
+- copiar línea abajo `Mayús + Alt + DownArrow`
+- bloc de notas: copiar celda superior `Mayús + Alt + UpArrow`
+- copiar línea arriba `Mayús + Alt + UpArrow`
+- cursorUpSelect `Ctrl + Mayús + UpArrow`
+- terminal: seleccionar hasta el comando anterior `Ctrl + Mayús + UpArrow`
+- terminal: seleccionar hasta el comando siguiente `Ctrl + Mayús + DownArrow`
+- cursorDownSelect `Ctrl + Mayús + DownArrow`
+- Aplicar formato a celda `Mayús + Alt + f`
+- bloc de notas: dar formato al bloc de notas `Mayús + Alt + f`
+- dar formato al documento `Mayús + Alt + f`
+- filesExplorer.findInFolder `Mayús + Alt + f`
+- search.action.restrictSearchToFolder `Mayús + Alt + f`
+- `Ctrl + Alt + UpArrow o DowArrow` no funciona

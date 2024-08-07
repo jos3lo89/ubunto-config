@@ -110,6 +110,12 @@ Type=Application
 Categories=Development;
 ```
 - Guarda el archivo y cierra el editor (`Ctrl+O` para guardar y `Ctrl+X` para salir).
+
+### angular cmabiar manejador de paquetes a bun
+```bash
+ng config -g cli.packageManager bun
+```
+
 ### atajos de teclado vs code config
 
 - bloc de notas: copiar celda inferior  `Mayús + Alt + DownArrow`

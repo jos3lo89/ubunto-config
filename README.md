@@ -1,3 +1,4 @@
+
 ## Ubunto 
 
 ### Configuración inicial
@@ -71,8 +72,43 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 
 sudo docker version
 ```
-
-
+### install postmanaaa
+- descargar el archivo de linux
+```bash
+cd ~/Descargas
+```
+- Extrae el contenido del archivo `postman-linux-x64.tar.gz`:
+```bash
+tar -xvzf postman-linux-x64.tar.gz
+```
+- Mueve el directorio extraído a `/opt` (esto generalmente requiere privilegios de superusuario):
+```bash
+sudo mv Postman /opt/Postman
+```
+- Crea un enlace simbólico para que sea fácil ejecutar Postman desde cualquier lugar:
+```bash
+sudo ln -s /opt/Postman/Postman /usr/bin/postman
+```
+- Para abrir Postman, simplemente escribe `postman` en la terminal:
+```bash
+postman
+```
+- Crea un archivo de acceso directo:
+```bash
+sudo nano /usr/share/applications/postman.desktop
+```
+- Agrega el siguiente contenido al archivo:
+```bash
+[Desktop Entry]
+Encoding=UTF-8
+Name=Postman
+Exec=/opt/Postman/Postman
+Icon=/opt/Postman/app/resources/app/assets/icon.png
+Terminal=false
+Type=Application
+Categories=Development;
+```
+- Guarda el archivo y cierra el editor (`Ctrl+O` para guardar y `Ctrl+X` para salir).
 ### atajos de teclado vs code config
 
 - bloc de notas: copiar celda inferior  `Mayús + Alt + DownArrow`

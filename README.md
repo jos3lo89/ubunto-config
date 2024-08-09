@@ -132,3 +132,20 @@ ng config -g cli.packageManager bun
 - filesExplorer.findInFolder `Mayús + Alt + f`
 - search.action.restrictSearchToFolder `Mayús + Alt + f`
 - `Ctrl + Alt + UpArrow o DowArrow` no funciona
+
+  ### fedora nvidia driver
+```bash
+sudo dnf remove xorg-x11-drv-nouveau
+sudo dnf install gcc kernel-devel kernel-headers dkms acpid libglvnd-devel
+sudo bash -c 'echo "blacklist nouveau" > /etc/modprobe.d/blacklist-nouveau.conf'
+sudo bash -c 'echo "options nouveau modeset=0" >> /etc/modprobe.d/blacklist-nouveau.conf'
+sudo dracut --force
+sudo reboot
+
+chmod +x NVIDIA-Linux-x86_64-550.107.02.run
+sudo ./NVIDIA-Linux-x86_64-550.107.02.run
+nvidia-smi
+
+```
+
+  

@@ -147,5 +147,8 @@ sudo ./NVIDIA-Linux-x86_64-550.107.02.run
 nvidia-smi
 
 ```
-
+### git ssh
+- ssh-keygen -t ed25519 -C "gothangel21@hotmail.com"
+- cat ~/.ssh/id_ed25519.pub
+- guardar la clave en github [github keys](https://github.com/settings/keys)
   
